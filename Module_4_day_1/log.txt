@@ -1,0 +1,42 @@
+docker_compose_example-db-1  | 2023-05-04 11:42:56+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+docker_compose_example-db-1  | 2023-05-04 11:42:56+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+docker_compose_example-db-1  | 2023-05-04 11:42:56+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Number of pools: 1
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Using Linux native AIO
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Completed initialization of buffer pool
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: 128 rollback segments are active.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: 10.6.4 started; log sequence number 42257; transaction id 14
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] Plugin 'FEEDBACK' is disabled.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] InnoDB: Buffer pool(s) load completed at 230504 11:42:56
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] Server socket created on IP: '0.0.0.0'.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] Server socket created on IP: '::'.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Warning] 'proxies_priv' entry '@% root@8d3ee88e2480' ignored in --skip-name-resolve mode.
+docker_compose_example-db-1  | 2023-05-04 11:42:56 0 [Note] mysqld: ready for connections.
+docker_compose_example-db-1  | Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+docker_compose_example-wordpress-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.3. Set the 'ServerName' directive globally to suppress this message
+docker_compose_example-wordpress-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.3. Set the 'ServerName' directive globally to suppress this message
+docker_compose_example-wordpress-1  | [Thu May 04 11:42:56.707489 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+docker_compose_example-wordpress-1  | [Thu May 04 11:42:56.707530 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+docker_compose_example-phpmyadmin-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.4. Set the 'ServerName' directive globally to suppress this message
+docker_compose_example-phpmyadmin-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.4. Set the 'ServerName' directive globally to suppress this message
+docker_compose_example-phpmyadmin-1  | [Thu May 04 11:42:56.699674 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.1.18 configured -- resuming normal operations
+docker_compose_example-phpmyadmin-1  | [Thu May 04 11:42:56.699849 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:42:59 +0000] "GET /index.php?route=/&route=%2F HTTP/1.1" 200 5965 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "POST /index.php?route=/ HTTP/1.1" 302 1003 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "GET /index.php?route=/&route=%2F HTTP/1.1" 200 18473 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "POST /index.php?route=/config/get HTTP/1.1" 200 2357 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "POST /index.php?route=/navigation&ajax_request=1 HTTP/1.1" 200 2923 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "POST /index.php?route=/config/get HTTP/1.1" 200 2454 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "POST /index.php?route=/version-check HTTP/1.1" 200 1033 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
+docker_compose_example-phpmyadmin-1  | 172.23.0.1 - - [04/May/2023:11:43:09 +0000] "POST /index.php?route=/config/set HTTP/1.1" 200 2343 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"
