@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5011-5012:5000'  # Map container port for the replicas
+    volumes:
+      - todo_data:/app/todo_data
+    deploy:
+      replicas: 2
+    logging:
+      driver: json-file
+
+volumes:
+  todo_data:
+
