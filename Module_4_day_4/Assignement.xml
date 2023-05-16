@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <object alt="" name="Image1" object_type="graphic"/>
+ <object alt="" name="Image2" object_type="graphic"/>
+ <object alt="" name="Image3" object_type="graphic"/>
+ <object alt="" name="Image4" object_type="graphic"/>
+ <paragraph index="21" node_type="writer">Analyze the application - which Microservice best practices does it not follow?
+</paragraph>
+ <paragraph index="22" node_type="writer">The following aspects need to be improved in the application:</paragraph>
+ <paragraph index="24" node_type="writer">- The logs shouldn’t written to a file, but to the container output.</paragraph>
+ <paragraph index="25" node_type="writer">- It should be stateless, so that:</paragraph>
+ <paragraph index="26" node_type="writer">  - it can easily be restarted without loss of data,</paragraph>
+ <paragraph index="27" node_type="writer">  - it is easy to spawn multiple instances of the application.</paragraph>
+ <paragraph index="28" node_type="writer">- Requirements installation should be moved from runtime to build time.</paragraph>
+ <paragraph index="29" node_type="writer">- App should be able to be executed both during development, with debugging enabled, and in production, with debugging disabled.</paragraph>
+ <paragraph index="30" node_type="writer">- The application should be built in such a way that the database can easily be replaced (development with production instance).</paragraph>
+ <paragraph index="33" node_type="writer">The logs output </paragraph>
+ <paragraph index="35" node_type="writer">It is stateless as after stopping the docker container by using docker-compose down</paragraph>
+ <paragraph index="38" node_type="writer">It is still retaining the data </paragraph>
+ <paragraph index="44" node_type="writer">It is replicating on multiple ports, </paragraph>
+</indexing>

@@ -5,6 +5,9 @@ import sys
 
 from flask import Flask, render_template, request
 
+
+#switch from test to production
+
 app = Flask(__name__)
 app.debug = bool(os.environ.get("DEBUG", False))
 
@@ -15,8 +18,7 @@ formatter = logging.Formatter("%(asctime)s,%(msecs)d %(name)s %(levelname)s %(me
 stream_handler.setFormatter(formatter)
 app.logger.addHandler(stream_handler)
 
-TODO_FILE_NAME = "/app/todo_data/todo.json"  # You can change the path anytime when you want to switch from test to production
-
+TODO_FILE_NAME = "/app/todo_data/todo.json"  # You can change the path anytime when you want to 
 # Load todo items from file or initialize an empty list
 if os.path.exists(TODO_FILE_NAME):
     with open(TODO_FILE_NAME) as f:
