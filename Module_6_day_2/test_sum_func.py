@@ -38,18 +38,18 @@ def test_add_integer_and_string():
     with pytest.raises(TypeError):
         add(2, "3")
 
-def test_add_positive_integer_and_float():
+def test_add_positive_string_and_float():
     with pytest.raises(TypeError):
         add_positive(2.5, "3")
 
-def test_add_positive_float_and_integer():
+def test_add_positive_float_and_string():
     with pytest.raises(TypeError):
         add_positive("2", 3.5)
 
-def test_add_float_and_integer():
+def test_add_float_and_string():
     with pytest.raises(TypeError):
         add("2", 3.5)
 
-def test_add_integer_and_float():
+def test_add_string_and_float():
     with pytest.raises(TypeError):
         add(2.5, "3")
